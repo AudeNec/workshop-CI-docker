@@ -33,5 +33,5 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/workshop-CI-docker:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/workshop-ci-docker:latest
           context: "{{defaultContext}}:client"
